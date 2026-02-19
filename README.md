@@ -57,6 +57,5 @@ Comprehensive slide deck covering methodology, results, and deployment strategy
 |----------|-------------|
 | 📄 [Results Summary →](docs/RESULTS_SUMMARY.md) | Full performance metrics and analysis |
 | 📄 [Data Access Guide →](docs/DATA_STATEMENT.md) | How to obtain MIMIC-IV access |
-| 📄 [Methodology →](docs/METHODOLOGY.md) | Detailed technical approach |
 
 ---
