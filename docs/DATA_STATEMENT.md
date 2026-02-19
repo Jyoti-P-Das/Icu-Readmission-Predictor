@@ -81,7 +81,7 @@ If you have MIMIC-IV access:
 
 ```bash
 # 1. Clone this repository
-git clone https://github.com/yourusername/icu-readmission-predictor.git
+git clone https://github.com/Jyoti-P-Das/icu-readmission-predictor.git
 cd icu-readmission-predictor
 
 # 2. Place your MIMIC-IV extract here:
@@ -229,8 +229,8 @@ We thank:
 - Email: mimic-support@physionet.org
 
 **This Repository Questions:**  
-- GitHub Issues: https://github.com/yourusername/icu-readmission-predictor/issues
-- Contact: jyotiprakash.das@example.com
+- GitHub Issues: https://github.com/Jyoti-P-Das/icu-readmission-predictor/issues
+- Contact: Dasjyoti280@gmail.com
 
 ---
 
