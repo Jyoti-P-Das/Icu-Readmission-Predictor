@@ -166,7 +166,7 @@ If you use these results, please cite:
   title = {ICU 30-Day Readmission Risk Predictor},
   year = {2025},
   publisher = {GitHub},
-  url = {https://github.com/yourusername/icu-readmission-predictor}
+  url = {https://github.com/Jyoti-P-Das/icu-readmission-predictor}
 }
 
 @article{johnson2023mimic,
