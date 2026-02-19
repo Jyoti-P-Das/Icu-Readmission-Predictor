@@ -29,7 +29,7 @@ Complete reproducible analysis from raw data to trained model
 ### 🚀 Streamlit App — Live Demo
 Interactive risk calculator deployed on Streamlit Cloud
 
-🌐 **[Launch Live App →]([https://app.streamlit.app](https://icu-readmission-predictor.streamlit.app/))** &nbsp;|&nbsp; 📂 **[View Code →](streamlit_app/)**
+🌐 **[Launch Live App →](https://app.streamlit.app](https://icu-readmission-predictor.streamlit.app/)** &nbsp;|&nbsp; 📂 **[View Code →](streamlit_app/)**
 
 - Patient-level 30-day readmission risk score
 - Model performance dashboard
