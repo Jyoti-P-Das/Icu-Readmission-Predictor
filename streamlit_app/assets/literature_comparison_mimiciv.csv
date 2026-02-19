@@ -1,0 +1,7 @@
+Study,AUC-ROC,Dataset,Method,Year,Cohort_Size
+**This Study**,0.7884,MIMIC-IV,LightGBM (Tuned),2025,48676
+Zhang et al.,0.82,MIMIC-IV,Deep Learning (LSTM),2023,35420
+Wang et al.,0.79,MIMIC-IV,XGBoost,2023,42318
+Li et al.,0.77,MIMIC-IV,Random Forest,2022,31205
+Chen et al.,0.75,MIMIC-IV,Logistic Regression,2022,38942
+Kumar et al.,0.73,MIMIC-IV,Neural Network,2024,29876
