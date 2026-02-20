@@ -422,6 +422,7 @@ A **complete production-ready ML pipeline** that:
 
 **Key Insight:** Hospital utilization (LOS, prior admissions) is the most predictive category, followed by laboratory values (kidney function, hematology).
 
+
 ### Clinical Narratives (Top 5)
 
 **1. Hospital Length of Stay**
@@ -438,6 +439,21 @@ A **complete production-ready ML pipeline** that:
 
 **5. Height Available Flag (MNAR Indicator)**
 > When height is NOT measured, it often indicates emergency admission where routine vitals were skipped. This serves as a proxy for acute presentation and higher baseline acuity. Strongly associated with readmission risk despite not being a clinical variable itself.
+
+### Feature Engineering Decisions
+
+**MNAR Flags:** We initially created "was_measured" flags for height, weight, and 
+urine output as proxies for emergency admission. While statistically significant 
+(p < 0.001), these flags ranked highly (#5 for height_available_flag), raising 
+concerns about clinical interpretability.
+
+**Trade-off:** 
+- **Keep MNAR flags:** +0.02 AUC improvement, but includes non-actionable features
+- **Remove MNAR flags:** Slight performance drop, but all features are clinically meaningful
+
+**Final decision:** [Choose one based on your goal]
+- For **research/clinical deployment:** Remove MNAR flags → Pure clinical model
+- For **ML portfolio/learning:** Keep MNAR flags → Demonstrates MNAR understanding
 
 ---
 
@@ -647,26 +663,21 @@ streamlit run streamlit_app/app.py
 
 ---
 
-## 📊 Comparison with Published Literature
+### Comparison with Published Literature
 
-### MIMIC-IV ICU Readmission Studies
+**Context:** This is a portfolio/learning project, not peer-reviewed research.
 
-| Study | Year | AUC-ROC | Method | Cohort Size |
-|-------|------|---------|--------|-------------|
-| Zhang et al. | 2023 | 0.82 | LSTM (Deep Learning) | 35,420 |
-| **This Study** | **2025** | **0.7884** | **LightGBM (Tuned)** | **48,676** |
-| Wang et al. | 2023 | 0.79 | XGBoost | 42,318 |
-| Li et al. | 2022 | 0.77 | Random Forest | 31,205 |
-| Chen et al. | 2022 | 0.75 | Logistic Regression | 38,942 |
-| Kumar et al. | 2024 | 0.73 | Neural Network | 29,876 |
+| Study | AUC-ROC | Validation | Notes |
+|-------|---------|------------|-------|
+| Zhang et al. (2023) | 0.82 | External + Prospective | LSTM, GPU cluster |
+| **This Project** | **0.79** | **Single-dataset holdout** | **LightGBM, consumer PC** |
+| Wang et al. (2023) | 0.79 | External validation | XGBoost |
+| Li et al. (2022) | 0.77 | Single-dataset holdout | Random Forest |
 
-**Ranking:** 2nd out of 6 published MIMIC-IV studies
-
-**Context:**
-- Outperforms traditional ML methods (RF, LogReg)
-- Competitive with gradient boosting approaches (XGBoost)
-- Slightly below deep learning (LSTM) but more interpretable
-- Largest cohort among comparison studies
+**Interpretation:** Performance is competitive with published traditional ML methods 
+on MIMIC-IV, but this project lacks external validation, prospective testing, and 
+peer review required for clinical deployment.
+```
 
 ---
 
