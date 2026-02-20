@@ -679,8 +679,9 @@ on MIMIC-IV, but this project lacks external validation, prospective testing, an
 peer review required for clinical deployment.
 ```
 
----
+
 ```
+---
 ## 🎯 Clinical Impact & Use Cases
 
 ### Target Use Case
