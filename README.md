@@ -1,7 +1,7 @@
 # 🏥 ICU 30-Day Readmission Risk Prediction System
 
 [![Python 3.10+](https://img.shields.io/badge/python-3.10+-blue.svg)](https://www.python.org/downloads/)
-[![MIMIC-IV](https://img.shields.io/badge/dataset-MIMIC--IV%20v2.2-green.svg)](https://physionet.org/content/mimiciv/)
+[![MIMIC-IV](https://img.shields.io/badge/dataset-MIMIC--IV%20v3.1-green.svg)](https://physionet.org/content/mimiciv/)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Streamlit](https://img.shields.io/badge/Streamlit-Live%20Demo-FF4B4B)](https://icu-readmission-predictor.streamlit.app/)
 
