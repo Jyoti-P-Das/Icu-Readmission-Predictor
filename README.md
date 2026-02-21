@@ -5,7 +5,7 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 [![Streamlit](https://img.shields.io/badge/Streamlit-Live%20Demo-FF4B4B)](https://icu-readmission-predictor.streamlit.app/)
 
-> **End-to-end machine learning pipeline predicting 30-day ICU readmission risk using MIMIC-IV data. From data cleaning to deployed clinical decision support tool.**
+> **End-to-end machine learning pipeline predicting 30-day ICU readmission risk using MIMIC-IV v3.1 data. From data cleaning to deployed clinical decision support tool.**
 
 [Live Demo](https://icu-readmission-predictor.streamlit.app/) • [View Notebook](notebooks/icu_readmission_analysis_CLEAN.ipynb) • [Documentation](docs/)
 
